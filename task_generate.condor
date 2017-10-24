@@ -1,0 +1,9 @@
+executable = generate
+universe = vanilla
+output = logs/generate.out.$(cluster)
+error = logs/generate.err.$(cluster)
+log = logs/generate.log.$(cluster)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+arguments = generated.txt
+queue

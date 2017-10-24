@@ -1,0 +1,11 @@
+executable = sin
+universe = vanilla
+output = logs/out.sin.$(cluster)
+error = logs/err.sin.$(cluster)
+log = logs/log.sin.$(cluster)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = generated.txt
+arguments = generated.txt sineresult.txt
+queue
+

@@ -1,0 +1,8 @@
+# http://goo.gl/I0zur -> Dagman
+Job generate task_generate.condor
+Job sine task_sine.condor
+Job cosine task_cosine.condor
+Job collect task_collect.condor
+PARENT generate CHILD sine cosine
+PARENT sine cosine CHILD collect
+

@@ -1,0 +1,10 @@
+executable = collect
+universe = vanilla
+output = collect.out.$(cluster)
+error = logs/collect.err.$(cluster)
+log = logs/collect.log.$(cluster)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = sineresult.txt, cosineresult.txt 
+arguments = sineresult.txt cosineresult.txt
+queue

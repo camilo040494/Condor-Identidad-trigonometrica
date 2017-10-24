@@ -1,0 +1,11 @@
+executable = cos
+universe = vanilla
+output = logs/out.cos.$(cluster)
+error = logs/err.cos.$(cluster)
+log = logs/log.cos.$(cluster)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = generated.txt
+arguments = generated.txt cosineresult.txt
+queue
+
